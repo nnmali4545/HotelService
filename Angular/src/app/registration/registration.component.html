@@ -1,0 +1,48 @@
+
+  <h3 class="w3-center">Registration</h3>
+  
+
+  <div class="w3-row w3-padding-32 w3-section">
+    
+  
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+              <label>Name</label>
+            <input class="w3-input w3-border" type="text" placeholder="Name" id='txtName'  name="Name">
+          </div>
+          <div class="w3-half">
+              <label>Email</label>
+            <input class="w3-input w3-border" type="text" placeholder="Email"  name="Email">
+          </div>
+          <div class="w3-half">
+              <label>Phone</label>
+              <input class="w3-input w3-border" type="number" placeholder="Phone"  name="Phone">
+            </div>
+            <div class="w3-half">
+                <label>Gender</label>
+              <input class="w3-input w3-border" type="text" placeholder="Gender"  name="Gender">
+            </div>
+            <div class="w3-half">
+                <label>Adress</label>
+                <input class="w3-input w3-border" type="text" placeholder="Adress"  name="Adress">
+              </div>
+              <div class="w3-half">
+                <label>Pincode</label>
+                <input class="w3-input w3-border" type="number" placeholder="Pincode"  name="Pincode">
+              </div>
+        </div>
+        
+        <button class="w3-button w3-black w3-center w3-section" (click)="SubmitValues()" type="submit" value="Submit" id="sumitBtn" >
+          <i class=""></i> Submit
+        </button>
+        <input type="button" value="submitbutton" (click)="myfunction()" >
+      </form>
+      <div class="container unauthenticated">
+        With GitHub: <a href="/oauth2/authorization/github">click here</a>
+        <input type="button" value="submitbutton" (click)="myfunction()" >
+    </div>
+    <div class="container authenticated" style="display:none">
+        Logged in as: <span id="user"></span>
+    </div>
+  </div>
